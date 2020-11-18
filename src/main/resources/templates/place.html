@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Place</title>
+</head>
+<body>
+
+<h1>Add place</h1>
+<form th:action="@{/place}" method="POST">
+
+    <label for="inputName">สถานที่</label>
+    <input type="input" name="place_name" id="inputName">
+
+    <label for="inputPv">จังหวัด</label>
+    <input type="input" name="province" id="inputPv">
+
+    <label for="inputCg">หมวดหมู่</label>
+    <input type="input" name="category" id="inputCg">
+
+    <label for="inputLink">ที่ตั้ง</label>
+    <input type="input" name="link" id="inputLink">
+
+    <input type="submit">
+</form>
+
+<hr>
+
+<h1>สถานที่</h1>
+
+<table border="1px">
+    <thead>
+    <tr>
+        <th>ชื่อ</th>
+        <th>จังหวัด</th>
+        <th>หมวดหมู่</th>
+        <th>ที่ตั้ง</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="place : ${allPlace}">
+        <td th:text="${place.place_name}"></td>
+        <td th:text="${place.province}"></td>
+        <td th:text="${place.category}"></td>
+        <td th:text="${place.link}"></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
