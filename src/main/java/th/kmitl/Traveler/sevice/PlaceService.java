@@ -1,5 +1,6 @@
 package th.kmitl.Traveler.sevice;
 
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Service;
 import th.kmitl.Traveler.model.Place;
 import th.kmitl.Traveler.model.Placerepository;
@@ -18,9 +19,20 @@ public class PlaceService {
         this.repository = repository;
     }
 
-    public List<Place> getPlace(){
-        return repository.findAll();
+    public List<Place> getTemple(){
+        return repository.findByCategory("วัด");
     }
+
+
+    public List<Place> getRest(){return  repository.findByCategory("ร้านอาหาร");}
+
+    public List<Place> getCafe(){return  repository.findByCategory("คาเฟ่");}
+
+    public List<Place> getNature(){return  repository.findByCategory("ธรรมชาติ");}
+
+    public List<Place> getHotel(){return  repository.findByCategory("ที่พัก");}
+
+
 
 
 
