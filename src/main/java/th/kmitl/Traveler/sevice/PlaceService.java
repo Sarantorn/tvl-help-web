@@ -18,13 +18,11 @@ public class PlaceService {
         this.repository = repository;
     }
 
-    public List<Place> getCustomers(){
+    public List<Place> getPlace(){
         return repository.findAll();
     }
 
-    public void createPlace(Place place){
-        repository.save(place);
-    }
+
 
 }
 

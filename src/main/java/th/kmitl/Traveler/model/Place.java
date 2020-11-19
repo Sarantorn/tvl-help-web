@@ -8,18 +8,20 @@ public class Place {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String place_name;
-    private String link;
-    private String province;
+    private String linkmap;
+    private String linkimg;
     private String category;
+    private String description;
 
     public Place() {
     }
 
-    public Place(String place_name, String link, String province, String category) {
+    public Place(String place_name, String linkmap, String linkimg, String category,String description) {
         this.place_name = place_name;
-        this.link = link;
-        this.province = province;
+        this.linkmap = linkmap;
+        this.linkimg = linkimg;
         this.category = category;
+        this.description = description;
     }
 
     public Long getId() {
@@ -38,21 +40,6 @@ public class Place {
         this.place_name = place_name;
     }
 
-    public String getLink() {
-        return link;
-    }
-
-    public void setLink(String link) {
-        this.link = link;
-    }
-
-    public String getProvince() {
-        return province;
-    }
-
-    public void setProvince(String province) {
-        this.province = province;
-    }
 
     public String getCategory() {
         return category;
@@ -60,5 +47,29 @@ public class Place {
 
     public void setCategory(String category) {
         this.category = category;
+    }
+
+    public String getLinkmap() {
+        return linkmap;
+    }
+
+    public void setLinkmap(String linkmap) {
+        this.linkmap = linkmap;
+    }
+
+    public String getLinkimg() {
+        return linkimg;
+    }
+
+    public void setLinkimg(String linkimg) {
+        this.linkimg = linkimg;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }

@@ -9,7 +9,7 @@ import th.kmitl.Traveler.model.Place;
 import th.kmitl.Traveler.sevice.PlaceService;
 
 @Controller
-@RequestMapping("/place")
+@RequestMapping("/place2")
 public class PlaceControll {
 
     private final PlaceService placeService;
@@ -20,16 +20,11 @@ public class PlaceControll {
 
     @GetMapping
     public String getPlacepage(Model model) {
-        model.addAttribute("allPlace", placeService.getCustomers());
-        return "place";
+        model.addAttribute("allPlace", placeService.getPlace());
+        return "place2";
     }
 
-    @PostMapping
-    public String registerCustomer(Place place, Model model){
-        placeService.createPlace(place);
-        model.addAttribute("allPlace", placeService.getCustomers());
-        return "redirect:place";
-    }
+
 }
 
 
