@@ -1,0 +1,34 @@
+<header th:fragment="header" xmlns:th="http://www.w3.org/1999/xhtml">
+    <!-- Static navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" th:href="@{/home}">Guide to</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/home}">Chachoengsao</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/Temple}">Temple</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/place}">Place</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/Hostel}">hostel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/Restaurant}">Restaurant</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/Cafe}">Cafe</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</header>
