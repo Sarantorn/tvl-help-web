@@ -8,17 +8,24 @@
 
     <hr>
     <BODY BACKGROUND="https://ohhotrip.com/wp-content/uploads/2019/09/japan_fuji.jpg" >
-    <h1>สถานที่</h1>
+
+
+    <h1>
+        <SPAN STYLE="color: black; text-shadow: 0em 0em 1.0em white, 0em 0em 1.0em white, 0em 0em 1.0em white, 0em 0em 1.0em white, 0em 0em 1.0em white, 0em 0em 1.0em white"><b><font face="แจ๋ว-can_jaew" size="6">ฉะเชิงเทรา สถานที่น่าเที่ยวเมื่อมาถึง</font></b></SPAN>
+    </h1>
+    <p>
+    <SPAN STYLE="color: black; text-shadow: 0em 0em 1.0em white, 0em 0em 1.0em white, 0em 0em 1.0em white, 0em 0em 1.0em white, 0em 0em 1.0em white, 0em 0em 1.0em white, 0em 0em 1.0em white"><font face="แจ๋ว-can_jaew" >ฉะเชิงเทรา หรือที่หลายคนเรียกว่าเมืองแปดริ้ว โดดเด่นด้วยการเป็นเมืองเก่าแก่ริมน้ำบางปะกง ด้วยอยู่ใกล้กรุงเทพฯ จึงเป็นอีกจังหวัดที่น่าเที่ยว น่าชม เพราะที่นี่ยังมีของดีซุกซ่อนอยู่มากมายชนิดที่หลายคนก็คาดไม่ถึง มีที่ไหนน่าสนใจบ้างไปดูกัน</font></SPAN>
+    </p>
+
     <div class="container-fluid mt-4">
         <div class="row justify">
             <div class="col-xl-3" th:each="place : ${allPlace}">
                 <div class="card h-200" style="width: 16rem;">
                     <div class="embed-responsive embed-responsive-16by9">
                         <img
-                                th:src="${place.linkimg}" class="card-img-top
-        embed-responsive-item" alt="180x100" >
+                                th:src="${place.linkimg}" class="card-img-top embed-responsive-item" alt="180x100" >
                     </div>
-                    <div class="card-body">
+                    <div class="card-body" >
                         <h5 class="card-title" th:text="${place.place_name}"></h5>
                         <p class="card-text" th:text="${place.description}"></p>
                     </div>

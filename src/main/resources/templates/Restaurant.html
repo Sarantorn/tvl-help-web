@@ -6,13 +6,16 @@
 <div layout:fragment="content" class="container">
     <BODY BACKGROUND="https://obs.line-scdn.net/0h3g6rIMlHbEgLC0DsAAoTHzJdbyc4Z39Lbz09S1dlMnx2aSkfMGkkJigNMHknOSsWZWUjKi5OM35xbChLMmo/w644" >
     <hr>
-    <h1>ร้านอาหารน่าลอง</h1>
 
-    <P>Resttttttttttt</P>
+    <h1> <SPAN STYLE="color: black; text-shadow: 0em 0em 1.0em yellow, 0em 0em 1.0em yellow, 0em 0em 1.0em yellow, 0em 0em 1.0em yellow, 0em 0em 1.0em yellow, 0em 0em 1.0em yellow"><b><font face="แจ๋ว-can_jaew" size="6">รวมร้านอาหาร บรรยากาศดี วิวสวย น่ามาโดน</font></b></SPAN></h1>
+    <P>
+        <SPAN STYLE="color: black; text-shadow: 0em 0em 1.0em yellow, 0em 0em 1.0em yellow, 0em 0em 1.0em yellow, 0em 0em 1.0em yellow, 0em 0em 1.0em yellow, 0em 0em 1.0em yellow, 0em 0em 1.0em yellow"><font face="แจ๋ว-can_jaew" > ใครที่กำลังมองหาร้านอาหารบรรยากาศดี วิวสวยๆ เหมาะแก่การพาครอบครัวหรือคนรู้ใจไปนั่งชิลล์กันในวันหยุด จะมีร้านไหนที่เข้าตาเราบ้างตามไปดูกันรับรองไม่ผิดหวังอย่างแน่นอน</font></SPAN>
+    </P>
+
     <div class="container-fluid mt-4">
         <div class="row justify">
             <div class="col-xl-3" th:each="place : ${allPlace}">
-                <div class="card h-200" style="width: 16rem;">
+                <div class="card h-200 text-white bg-dark mb-3" style="width: 16rem;">
                     <div class="embed-responsive embed-responsive-16by9">
                         <img
                                 th:src="${place.linkimg}" class="card-img-top

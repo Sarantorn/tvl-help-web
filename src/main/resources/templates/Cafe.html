@@ -6,24 +6,29 @@
 
     <hr>
     <BODY BACKGROUND="https://img.lovepik.com/photo/40042/6747.jpg_wh860.jpg" >
-    <h1>คาเฟ่ที่นั่งชิว</h1>
 
-
-    <p>Cafeeeeeeeeee</p>
+    <h1>
+        <SPAN STYLE="color: black; text-shadow: 0em 0em 1.0em yellow, 0em 0em 1.0em yellow, 0em 0em 1.0em yellow, 0em 0em 1.0em yellow, 0em 0em 1.0em yellow, 0em 0em 1.0em yellow, 0em 0em 1.0em yellow, 0em 0em 1.0em yellow"><b><font face="Pattaya" size="6">คาเฟ่ สไตล์มินิมอล ถ่ายรูปเป๊ะ!เช็คอินปัง!</font></b></SPAN>
+    </h1>
+    <p>
+        <SPAN STYLE="color: black; text-shadow: 0em 0em 1.0em yellow, 0em 0em 1.0em yellow, 0em 0em 1.0em yellow, 0em 0em 1.0em yellow, 0em 0em 1.0em yellow, 0em 0em 1.0em yellow, 0em 0em 1.0em yellow, 0em 0em 1.0em yellow">ร้านคาเฟ่สไตล์มินิมอล ที่คัดมาแบบเน้นๆ ให้ไปนั่งชิลล์ๆ จิบกาแฟเพลินๆ ถ่ายรูปเก๋ๆ  มีทั้งร้านโทนสีขาวสะอาดตา ดูคลีนๆ คุมโทนเรียบๆ หรือจะเป็นร้านโทนสีดำสุดคูล สายดาร์คต้องโดน อยากรู้ว่ามีที่ไหนบ้าง? ตามไปดูกันเลย</SPAN>
+    </p>
 
     <div class="container-fluid mt-4">
         <div class="row justify">
             <div class="col-xl-3" th:each="place : ${allPlace}">
-                <div class="card h-200" style="width: 16rem;">
+
+                <div class="card h-200 text-white bg-dark mb-3" style="width: 16rem;">
                     <div class="embed-responsive embed-responsive-16by9">
                         <img
                                 th:src="${place.linkimg}" class="card-img-top
         embed-responsive-item" alt="180x100" >
                     </div>
-                    <div class="card-body">
+                    <div class="card-body" >
                         <h5 class="card-title" th:text="${place.place_name}"></h5>
                         <p class="card-text" th:text="${place.description}"></p>
                     </div>
+
                     <div class="card-footer">
                         <a  th:href="${place.linkmap}" class="btn btn-primary float-right">Go map</a>
                     </div>
