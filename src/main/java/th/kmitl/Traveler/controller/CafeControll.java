@@ -19,7 +19,7 @@ public class CafeControll {
     @GetMapping
     public String getRestaurantpage(Model model) {
         model.addAttribute("allPlace", placeService.getCafe());
-        return "Cage";
+        return "Cafe";
     }
 
 }

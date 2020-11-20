@@ -28,7 +28,7 @@ public class PlaceService {
 
     public List<Place> getCafe(){return  repository.findByCategory("คาเฟ่");}
 
-    public List<Place> getNature(){return  repository.findByCategory("ธรรมชาติ");}
+    public List<Place> getNature(){return  repository.findByCategory("สถานที่ธรรมชาติ");}
 
     public List<Place> getHotel(){return  repository.findByCategory("ที่พัก");}
 

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import th.kmitl.Traveler.sevice.PlaceService;
 
 @Controller
-@RequestMapping("/place")
+@RequestMapping("/Natural")
 public class PlaceControll {
 
     private final PlaceService placeService;
@@ -18,7 +18,7 @@ public class PlaceControll {
 
     @GetMapping
     public String getPlacepage(Model model) {
-        model.addAttribute("allPlace", placeService.getTemple());
+        model.addAttribute("allPlace", placeService.getNature());
         return "place2";
     }
 
